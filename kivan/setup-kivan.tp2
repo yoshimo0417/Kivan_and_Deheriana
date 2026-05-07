@@ -27,7 +27,7 @@ ALWAYS
     
     ACTION_IF GAME_IS ~bg2ee eet~ BEGIN 
     
-      ACTION_DEFINE_ARRAY cdnoconvert BEGIN ~setup-ee~ END // since this file is only used for EE games, it's already converted to utf8
+      ACTION_DEFINE_ARRAY cdnoconvert BEGIN ~setup-ee~ ~install~ END // since this file is only used for EE games, it's already converted to utf8
       ACTION_DEFINE_ARRAY cdreload BEGIN setup journal END
       LAF HANDLE_CHARSETS
         INT_VAR
@@ -63,6 +63,14 @@ LANGUAGE
   ~Kivan/tra/english/journal.tra~
   ~Kivan/tra/russian/setup.tra~
   ~Kivan/tra/russian/journal.tra~
+
+LANGUAGE
+  ~Simplified Chinese (by Yoshimo0417)~
+  ~schinese~ 
+  ~Kivan/tra/english/setup.tra~
+  ~Kivan/tra/english/journal.tra~
+  ~Kivan/tra/schinese/install.tra~
+  ~Kivan/tra/schinese/journal.tra~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
